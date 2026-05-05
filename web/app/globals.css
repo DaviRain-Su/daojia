@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5efe2;
+  --foreground: #2b241c;
+  --card: #fbf7ed;
+  --border: #d8c7a6;
+  --accent: #5f4b32;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1b1712;
+    --foreground: #efe6d2;
+    --card: #241f18;
+    --border: #5e5038;
+    --accent: #d7be8c;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  background-image: radial-gradient(rgba(95, 75, 50, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
