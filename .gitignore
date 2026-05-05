@@ -1,0 +1,35 @@
+# macOS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python / local env
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+
+# Node / frontend build artifacts
+node_modules/
+web/node_modules/
+web/.next/
+web/.open-next/
+web/.wrangler/
+web/.dev.vars*
+!web/.dev.vars.example
+web/.vercel/
+
+# OCR / extraction intermediates and large binaries
+data/raw/
+data/sample10/
+tmp_page1.png
+*.pdf
+
+# Local cloned tools and experiments
+zpdf/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
